@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LOL</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    *::before { box-sizing: border-box; }
+    *::after { box-sizing: border-box; }
+    ul, ol { list-style: none; }
+    .clearfix::after { content: ''; display: block; clear: both; }
+    .clearfix { zoom: 1; }
+    body { font-size: 12px; }
+    .topbar-wrapper { background: #000; position: relative; }
+    .topbar {
+      width: 1240px;
+      margin: auto;
+      color: white;
+      position: relative;
+    }
+    .topbar .logo {
+      background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat 0 -30px;
+      width: 190px;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .topbar .globalNavigation { float: left; margin-left: 190px; }
+    .topbar .globalNavigation .menu > li { float: left; font-size: 18px;
+      width: 120px; text-align: center; padding: 19px 0; }
+    .topbar .globalNavigation .menu > li > span { display: block; }
+    .topbar .globalNavigation .menu > li > small { font-size: 12px; }
+    .topbar > .icons { float: left; padding-top: 20px; }
+    .topbar > .icons > a {
+      margin: 0 10px;
+    }
+    .topbar > .icons > a.search {
+      display: inline-block;
+      width: 27px;
+      height: 27px;
+      background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -8px 0;
+    }
+    .topbar > .icons > a.mobile {
+      display: inline-block;
+      width: 21px;
+      height: 27px;
+      background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -45px 0;
+    }
+    .topbar > .userNavigation {
+      float: left;
+    }
+    .topbar > .userNavigation .popover {
+      display: none;
+    }
+    .topbar > .userNavigation .icon-user {
+      width: 74px;
+      height: 74px;
+      position: relative;
+      padding-top: 4px;
+      padding-left: 4px;
+      float: left;
+    }
+    .topbar > .userNavigation .icon-user .mask {
+      width: 74px;
+      height: 74px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat 0 -167px;
+    }
+    .topbar > .userNavigation > .text {
+      float: left;
+    }
+    .topbar-wrapper > .subMenu-wrapper {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .topbar-wrapper .subMenu {
+      width: 1240px;
+      margin: 0 auto;
+      display: none;
+    }
+    .topbar-wrapper .subMenu.active {
+      display: block;
+    }
+    .topbar-wrapper .subMenu > ul {
+      margin-left: 200px;
+      text-align: center;
+    }
+    .topbar-wrapper .subMenu > ul > li {
+      width: 120px;
+      float: left;
+    }
+    .topbar-wrapper .subMenu > ul > li > a {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <div class="topbar-wrapper">
+    <div class="topbar clearfix">
+      <div class="logo"></div>
+      <nav class="globalNavigation">
+        <ul class="menu clearfix">
+          <li><span>游戏资料</span>
+            <small>Game info</small>
+          </li>
+          <li><span>商场/合作</span>
+            <small>Store</small>
+          </li>
+          <li><span>用户互动</span>
+            <small>Community</small>
+          </li>
+          <li><span>赛事中心</span>
+            <small>Events</small>
+          </li>
+          <li><span>自助系统</span>
+            <small>System</small>
+          </li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <a href="#" class="search"></a>
+        <a href="#" class="mobile"></a>
+      </div>
+      <div class="userNavigation clearfix">
+        <div class="icon-user">
+          <div class="mask"></div>
+          <img src="http://ossweb-img.qq.com/images/lol/v2/personal/avatar/default.png" alt="头像">
+        </div>
+        <div class="text">
+          <p>亲爱的召唤师，欢迎登录</p>
+          <p>
+            <small>登录后查看自己的战绩、资产、声望值等</small>
+          </p>
+        </div>
+        <div class="popover">
+          <p>登录并且绑定大区后才可查看您的具体信息哦~（包括战绩、资产、声望值等）</p>
+          <a href="#">进入个人中心</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="subMenu-wrapper">
+      <div class="subMenu">
+        <ul class="clearfix">
+          <li>
+            <a href="#" target="_top">新手指引</a>
+            <a href="#" target="_top"><i class="icon-hot"></i>资料库</a>
+            <a href="#" target="_top">攻略中心</a>
+            <a href="#" target="_top">模式实验室</a>
+            <a href="#" target="_top">海克斯战利品库</a>
+            <a href="#" target="_top">屏保下载</a>
+            <a href="#" target="_top"><i class="icon-new"></i>宇宙官网</a>
+          </li>
+          <li>
+            <a target="_top" href="#"><i class="ico-h"></i>点券充值</a>
+            <a target="_top" href="#">道聚城</a>
+            <a href="#" target="_top">周边商城</a>
+            <a href="#" target="_top">LOL桌游</a>
+            <a href="#" target="_top">LOL信用卡</a>
+            <a href="#" target="_top">网吧特权</a>
+          </li>
+          <li>
+            <a href="#" target="_top">在线客服</a>
+            <a href="#" target="_top">视频中心</a>
+            <a href="#" target="_top"><i class="icon-hot"></i>活动中心</a>
+            <a target="_top" href="#">官方论坛</a>
+            <a href="#" target="_top">官方微信</a>
+            <a href="#" target="_top">官方微博</a>
+          </li>
+          <li>
+            <a target="_top" href="#"><i class="icon-hot"></i>LPL职业联赛</a>
+            <a target="_top" href="#">甲级职业联赛</a>
+            <a target="_top" href="#">德玛西亚杯</a>
+            <a target="_top" href="#">城市争霸赛</a>
+            <a target="_top" href="#">高校联赛</a>
+            <a target="_top" href="#">校际精英赛</a>
+            <a target="_top" href="#">高校自发赛</a>
+          </li>
+          <li>
+            <!--<li><a href="#" target="_blank" ><i class="icon-icon"></i>点亮图标</a></li>-->
+            <!--<li><a href="#" target="_blank" ><i class="icon-prestige"></i>声望系统</a></li>-->
+            <a target="_top" href="#">点亮图标</a>
+            <a target="_top" href="#">声望系统</a>
+            <a target="_top" href="#"><i class="icon-hot"></i>封号查询</a>
+            <a target="_top" href="#">体验服申请</a>
+            <a target="_top" href="#">服务器状态查询</a>
+            <a target="_top" href="#">裁决之镰</a>
+            <a target="_top" href="#"><i class="icon-new"></i>峡谷之巅</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $('.globalNavigation').on('mouseenter', function () {
+    $('.topbar-wrapper .subMenu').addClass('active')
+  }).on('mouseleave', function () {
+    $('.topbar-wrapper .subMenu').removeClass('active')
+  })
+  $('.topbar-wrapper .subMenu').on('mouseenter', function () {
+    $('.topbar-wrapper .subMenu').addClass('active')
+  }).on('mouseleave', function () {
+    $('.topbar-wrapper .subMenu').removeClass('active')
+  })
+</script>
+</body>
+</html>
